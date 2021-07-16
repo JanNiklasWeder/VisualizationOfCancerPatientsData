@@ -1,0 +1,68 @@
+\documentclass[usegeometry=true]{scrartcl}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{amssymb}
+% Dimensionen bitte nicht ändern. 
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm, bindingoffset=1cm, includeheadfoot]{geometry}
+%Zeilenabstand bitte nicht ändern
+\usepackage[onehalfspacing]{setspace}
+
+\usepackage[backend=biber,style=numeric,]{biblatex}
+\addbibresource{paper.bib}
+
+\begin{document}
+% ----------------------------------------------------------------------------
+\subject{Projektbericht zum Modul Information Retrieval und Visualisierung Sommersemester 2021}
+\title{Titel des Dokuments}
+%\subtitle{Untertitel}% optional
+\author{Jan-Niklas Weder}% obligatorisch
+\date{10.9.2021}
+\begin{titlepage}
+	\maketitle % verwendet die zuvor gemachte Angaben zur Gestaltung eines Titels
+	\thispagestyle{empty} % remove number
+\end{titlepage}
+
+% ----------------------------------------------------------------------------
+% Inhaltsverzeichnis:
+\pagenumbering{Roman}
+
+% only show till subsections
+\setcounter{tocdepth}{2}
+% only show numbers for sections
+\setcounter{secnumdepth}{1}
+\tableofcontents
+
+\clearpage
+\pagenumbering{arabic}
+% ----------------------------------------------------------------------------
+% Gliederung und Text:
+
+\section{Einleitung}
+
+\section{Daten}
+\subsection{Technische Bereitstellung der Daten}
+\subsection{Datenvorverarbeitung}
+\section{Visualisierungen}
+\subsection{Analyse der Anwendungsaufgaben}
+\subsection{Anforderungen an die Visualisierungen}
+\subsection{Präsentation der Visualisierungen} 
+\subsubsection{Visualisierung Eins}
+\subsubsection{Visualisierung Zwei}
+\subsubsection{Visualisierung Drei}
+\subsection{Interaktion}
+\section{Implementierung}
+\section{Anwendungsfälle}
+\subsection{Anwendung Visualisierung Eins}
+\subsection{Anwendung Visualisierung Zwei}
+\subsection{Anwendung Visualisierung Drei}
+\section{Verwandte Arbeiten}
+\section{Zusammenfassung und Ausblick}
+\section*{Anhang: Git-Historie}
+
+\printbibliography
+
+\end{document}
+
